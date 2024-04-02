@@ -1,0 +1,19 @@
+{
+  "name": "example-joker",
+  "version": "0.1.0",
+  "description": "Application that tells jokes",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node src/js/joker.js",
+    "format": "prettier -w src/js/joker.js"
+  },
+  "author": "Oddvar Zakarias Kristiansen",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "give-me-a-joke": "^0.5.1"
+  }
+}

@@ -18,8 +18,5 @@
   },
   "dependencies": {
     "give-me-a-joke": "^0.5.1"
-  },
-  "parserOptions": {
-    "sourceType": "module"
-}
+  }
 }

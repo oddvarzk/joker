@@ -1,22 +1,38 @@
 {
   "name": "example-joker",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Application that tells jokes",
   "type": "module",
   "main": "src/index.js",
   "scripts": {
+    "start": "npm install",
     "test": "node src/js/joker.test.js",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
-    "lint-fix": "eslint src/**/*.js --cache --fix"
+    "lint-fix": "eslint src/**/*.js --cache --fix",
+    "prepare": "husky install"
   },
   "author": "Oddvar Zakarias Kristiansen",
   "license": "ISC",
   "devDependencies": {
     "eslint": "^8.57.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5"
   },
   "dependencies": {
     "give-me-a-joke": "^0.5.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
   }
 }

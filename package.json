@@ -5,7 +5,6 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "start": "npm install",
     "test": "node src/js/joker.test.js",
     "format": "prettier -w src/**/*.js",
     "lint": "eslint src/**/*.js",
